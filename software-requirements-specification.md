@@ -239,7 +239,7 @@
         >   1. 소프트웨어와 인터페이스 하는 목적
         >   1. 인터페이스에서 사용되는 메시지의 내용과 형식에 관한 정의
         >       - 문서화된 인터페이스를 자세하게 설명할 필요는 없지만, 인터페이스를 정의하는 문서에 대한 참조가 필요하다.
-    1. 통신 인터페이스(Communication interfaces)
+    1. 통신 인터페이스(Communications interfaces)
         >- 로컬 네트워크 프로토콜과 같은 통신에 대한 다양한 인터페이스를 지정해야 한다.
     1. 메모리 제약사항(Memory constraints)
         >- 1차 및 2차 메모리에 적용 가능한 특성과 한계를 명시해야 한다.
@@ -313,7 +313,7 @@
     1. 사용자 인터페이스(User interfaces)
     1. 하드웨어 인터페이스(Hardware interfaces)
     1. 소프트웨어 인터페이스(Software interfaces)
-    1. 통신 인터페이스(Communication interfaces)
+    1. 통신 인터페이스(Communications interfaces)
 1. 기능 요구사항(Functional requirements)
     >- 기능 요구사항은 소프트웨어가 입력을 처리하고 출력을 생성하는 기본적인 행동을 정의해야 한다.
     >- 포함하는 행동들
