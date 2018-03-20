@@ -2,19 +2,19 @@
 
 - [Software Requirements Specification](#software-requirements-specification)
   - [Considerations for producing a good SRS](#considerations-for-producing-a-good-srs)
-    - [1. SRS의 특성(Nature of the SRS)](#1-srs%EC%9D%98-%ED%8A%B9%EC%84%B1nature-of-the-srs)
-    - [2. SRS의 배경(Environment of the SRS)](#2-srs%EC%9D%98-%EB%B0%B0%EA%B2%BDenvironment-of-the-srs)
-    - [3. 좋은 SRS의 특징(Characteristics of a good SRS)](#3-%EC%A2%8B%EC%9D%80-srs%EC%9D%98-%ED%8A%B9%EC%A7%95characteristics-of-a-good-srs)
-    - [4. SRS의 협업(Joint preparation of the SRS)](#4-srs%EC%9D%98-%ED%98%91%EC%97%85joint-preparation-of-the-srs)
-    - [5. SRS 개선(SRS evolution)](#5-srs-%EA%B0%9C%EC%84%A0srs-evolution)
-    - [6. 프로토타이핑(Prototyping)](#6-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91prototyping)
-    - [7. SRS에 설계 포함하기(Embedding design in the SRS)](#7-srs%EC%97%90-%EC%84%A4%EA%B3%84-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0embedding-design-in-the-srs)
-    - [8. SRS에 프로젝트 요구사항 포함하기(Embedding project requirements in the SRS)](#8-srs%EC%97%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD-%ED%8F%AC%ED%95%A8%ED%95%98%EA%B8%B0embedding-project-requirements-in-the-srs)
+    - [1. SRS의 특성(Nature of the SRS)](#1-srs의-특성nature-of-the-srs)
+    - [2. SRS의 배경(Environment of the SRS)](#2-srs의-배경environment-of-the-srs)
+    - [3. 좋은 SRS의 특징(Characteristics of a good SRS)](#3-좋은-srs의-특징characteristics-of-a-good-srs)
+    - [4. SRS의 협업(Joint preparation of the SRS)](#4-srs의-협업joint-preparation-of-the-srs)
+    - [5. SRS 개선(SRS evolution)](#5-srs-개선srs-evolution)
+    - [6. 프로토타이핑(Prototyping)](#6-프로토타이핑prototyping)
+    - [7. SRS에 설계 포함하기(Embedding design in the SRS)](#7-srs에-설계-포함하기embedding-design-in-the-srs)
+    - [8. SRS에 프로젝트 요구사항 포함하기(Embedding project requirements in the SRS)](#8-srs에-프로젝트-요구사항-포함하기embedding-project-requirements-in-the-srs)
   - [The parts of an SRS](#the-parts-of-an-srs)
-    - [1. 소개(Introduction)](#1-%EC%86%8C%EA%B0%9Cintroduction)
-    - [2. 일반 기술사항(Overall description)](#2-%EC%9D%BC%EB%B0%98-%EA%B8%B0%EC%88%A0%EC%82%AC%ED%95%ADoverall-description)
-    - [3. 상세 요구사항(Specific requirements)](#3-%EC%83%81%EC%84%B8-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%ADspecific-requirements)
-    - [4. 지원 정보(Supporting information)](#4-%EC%A7%80%EC%9B%90-%EC%A0%95%EB%B3%B4supporting-information)
+    - [1. 소개(Introduction)](#1-소개introduction)
+    - [2. 일반 기술사항(Overall description)](#2-일반-기술사항overall-description)
+    - [3. 상세 요구사항(Specific requirements)](#3-상세-요구사항specific-requirements)
+    - [4. 지원 정보(Supporting information)](#4-지원-정보supporting-information)
   - [Annex](#annex)
     - [A. SRS templates](#a-srs-templates)
       - [A.1. Template of SRS Section 3 organized by mode: Version 1](#a1-template-of-srs-section-3-organized-by-mode-version-1)
@@ -376,6 +376,42 @@
         >   1. Use of a proven portable language
         >   1. Use of a particular compiler or language subset
         >   1. Use of a particular operation system
+1. 상세 요구사항의 구성(Organizing the specific requirements)
+    >- 시스템의 세부 요구사항은 광범위한 경향이 있으므로 자료를 이해하기에 가장 적합한 방식으로 구성하는 방법을 세심하게 고려해야 한다.
+    1. 시스템 모드(System mode)
+        >- 일부 시스템은 운영 모드에 따라 상당히 다르게 작동할 수 있다.
+        >   - 예: 제어 시스템은 연습, 일반, 긴급 등의 여러 모드가 있을 수 있다.
+        >- 모드를 기준으로 구성하는 경우 [A.1](#a1-template-of-srs-section-3-organized-by-mode-version-1)과 [A.2](#a2-template-of-srs-section-3-organized-by-mode-version-2)를 사용한다.
+    1. 사용자 부류(User class)
+        >- 일부 시스템은 사용자의 부류에 따라 서로 다른 기능을 제공한다.
+        >   - 예: 엘리베이터 제어 시스템은 승객, 정비원, 소방관에게 서로 다른 기능을 제공한다.
+        >- 사용자 부류에 따라 구성하는 경우 [A.3](#a3-template-of-srs-section-3-organized-by-user-class)를 사용한다.
+    1. 객체(Objects)
+        >- 객체는 시스템에서 현실 세계와 대응되는 개체이다.
+        >- 객체에는 각 각체의 상태(attributes) 및 객체의 행위(functions)가 포함된다.
+        >   - 이러한 행위는 services, methods, processes라고도 한다.
+        >- 객체에 따라 구성하는 경우 [A.4](#a4-template-of-srs-section-3-organized-by-object)를 사용한다.
+    1. 특징(Feature)
+        >- 특징은 시스템에 의해 외부적으로 요구되는 서비스로서 원하는 결과를 얻기 위해서는 입력이 필요할 수도 있다.
+        >   - 예: 전화 시스템에서 특징들은 지역 내 통화, 착신 전환, 화상 통화를 포함한다.
+        >- 일반적으로 각 특징은 자극-반응의 순서로 설명된다.
+        >- 특징에 따라 구성하는 경우 [A.5](#a5-template-of-srs-section-3-organized-by-feature)를  사용한다.
+    1. 자극(Stimulus)
+        >- 일부 시스템은 자극의 측면에서 기능들을 설명할 때 가장 잘 구성될 수 있다.
+        >   - 예: 항공기 자동 착륙 시스템은 동력 상실, 윈드시어 등을 위해 구성될 수 있다.
+        >- 자극에 따라 구성하는 경우 [A.6](#a6-template-of-srs-section-3-organized-by-stimulus)를 사용한다.
+    1. 반응(Response)
+        >- 일부 시스템은 반응 생성을 지원하는 기능들을 설명할 때 가장 잘 구성될 수 있다.
+        >   - 예: 직원 시스템의 기능은 급여 생성과 관련된 기능들, 직원 목록 생성과 관련된 기능 등으로 구성될 수 있다.
+        >- 반응에 따라 구성하는 경우 [A.6](#a6-template-of-srs-section-3-organized-by-stimulus)를 사용한다.
+    1. 기능 계층(Functional hierarchy)
+        >- 위 조직 체계 중 유용한 수단이 없다면, 전체 기능은 공통 입력, 공통 출력 또는 공통 내부 데이터 접근에 의해 구성된 기능의 계층으로 구성될 수 있다.
+        >- 데이터 흐름 다이어그램과 데이터 사전을 사용하여 기능과 데이터 사이의 관계를 보여줄 수 있다.
+        >- 기능 계층별로 구성하는 경우 [A.7](#a7-template-of-srs-section-3-organized-by-functional-hierarchy)을 사용한다.
+    1. Additional comments
+        >- 새로운 SRS를 고려할 때 두 가지 이상의 조직 기법이 적합할 수 있다.
+        >   - 이 경우 명세에 따른 시스템의 상세 요구사항에 맞춘 다중 계층의 요구사항을 구성한다.
+        >- 사용자 분류와 기능을 결합하는 구성은 [A.8](#a8-template-of-srs-section-3-showing-multiple-organizations)을 참고한다.
 
 ### 4. 지원 정보(Supporting information)
 
