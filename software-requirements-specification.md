@@ -17,8 +17,8 @@
       - [1.3. 용어 및 약어 정의(Definitions, acronyms and abbreviations)](#13-용어-및-약어-정의definitions-acronyms-and-abbreviations)
       - [1.4. 참고자료(References)](#14-참고자료references)
       - [1.5. 개요(Overview)](#15-개요overview)
-    - [2. 일반 기술사항(Overall description)](#2-일반-기술사항overall-description)
-      - [2.1. 프로젝트 결과물 관점(Product perspective)](#21-프로젝트-결과물-관점product-perspective)
+    - [2. 전체 시스템 개요(Overall description)](#2-전체-시스템-개요overall-description)
+      - [2.1. 제품 관점(Product perspective)](#21-제품-관점product-perspective)
         - [2.1.1. 시스템 인터페이스(System interfaces)](#211-시스템-인터페이스system-interfaces)
         - [2.1.2. 사용자 인터페이스(User interfaces)](#212-사용자-인터페이스user-interfaces)
         - [2.1.3. 하드웨어 인터페이스(Hardware interfaces)](#213-하드웨어-인터페이스hardware-interfaces)
@@ -259,12 +259,12 @@
 >- SRS의 나머지 부분이 포함하고 있는 내용을 설명한다.
 >- SRS가 어떻게 구성되어 있는지 설명한다.
 
-### 2. 일반 기술사항(Overall description)
+### 2. 전체 시스템 개요(Overall description)
 
 >- 제품 및 제품 요구사항에 영향을 미치는 일반적인 요인을 설명해야 한다.
 >- 특정 요구사항을 설명하지 않고, 상세 요구사항(Specific requirements)에 관한 배경을 제공한다.
 
-#### 2.1. 프로젝트 결과물 관점(Product perspective)
+#### 2.1. 제품 관점(Product perspective)
 
 >- 제품을 관련된 다른 제품과의 관계를 중심으로 봐야 한다.
 >- 제품이 독립적인 경우 명시되어야 하고, 더 큰 시스템의 구성 요소로 정의된다면 시스템의 요구사항을 소프트웨어의 기능과 관계시켜야 하며 시스템과 소프트웨어 사이의 인터페이스를 식별해야 한다.
