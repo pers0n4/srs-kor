@@ -435,40 +435,52 @@
 #### 3.5. 설계 제약사항(Design constraints)
 
 >- 다른 표준, 하드웨어 한계 등에 의해 부과될 수 있는 설계 제약사항을 명시해야 한다.
-1. 표준 준수(Standards compliance)
-    >- 표준이나 규정에서 파생된 요구사항을 기술한다.
-    >- 포함될 수 있는 내용
-    >   1. Report format
-    >   1. Data naming
-    >   1. Accounting procedures
-    >   1. Audit tracing
+
+##### 3.5.1. 표준 준수(Standards compliance)
+
+>- 표준이나 규정에서 파생된 요구사항을 기술한다.
+>- 포함될 수 있는 내용
+>   1. Report format
+>   1. Data naming
+>   1. Accounting procedures
+>   1. Audit tracing
 
 #### 3.6. 소프트웨어 시스템 속성(Software system attributes)
 
 >- 요구사항으로 사용될 수 있는 소프트웨어의 여러 가지 속성 중 제품이 객관적으로 입증되는 데 필요한 속성을 명시해야 한다.
-1. 신뢰성(Reliability)
-    >- 배포될 때 소프트웨어 시스템의 필수 신뢰성을 확립하는 데 필요한 요소를 명시해야 한다.
-1. 가용성(Availability)
-    >- 검사, 복구, 재시작과 같이 전체 시스템에 대해 정의된 가용성 수준을 보장하는 데 필요한 요소가 지정되어야 한다.
-1. 보안성(Security)
-    >- 실수 또는 악의적인 접근, 사용, 수정, 파괴, 공개로부터 소프트웨어를 보호하기 위한 요소를 명시해야 한다.
-    >- 포함될 수 있는 요구사항
-    >   1. Utilize certain cryptographical techinques
-    >   1. Keep specific log or history data sets
-    >   1. Assign certain functions to diffrent modules
-    >   1. Restrict communication between some areas of the program
-    >   1. Check data integrity for critical variables
-1. 유지 보수성(Maintainability)
-    >- 소프트웨어 자체를 쉽게 유지 보수할 수 있는 속성을 명시해야 한다.
-    >- 모듈화, 인터페이스, 복잡성 등과 관련된 요구사항이 있을 수 있다.
-1. 이식성(Portability)
-    >- 소프트웨어를 다른 호스트 시스템 또는 운영체제로 쉽게 이식할 수 있는 속성을 명시해야 한다.
-    >- 포함될 수 있는 속성의 종류
-    >   1. Percentage of components with host-dependent code
-    >   1. Percentage of code that is dependent
-    >   1. Use of a proven portable language
-    >   1. Use of a particular compiler or language subset
-    >   1. Use of a particular operation system
+
+##### 3.6.1. 신뢰성(Reliability)
+
+>- 배포될 때 소프트웨어 시스템의 필수 신뢰성을 확립하는 데 필요한 요소를 명시해야 한다.
+
+##### 3.6.2. 가용성(Availability)
+
+>- 검사, 복구, 재시작과 같이 전체 시스템에 대해 정의된 가용성 수준을 보장하는 데 필요한 요소가 지정되어야 한다.
+
+##### 3.6.3. 보안성(Security)
+
+>- 실수 또는 악의적인 접근, 사용, 수정, 파괴, 공개로부터 소프트웨어를 보호하기 위한 요소를 명시해야 한다.
+>- 포함될 수 있는 요구사항
+>   1. Utilize certain cryptographical techinques
+>   1. Keep specific log or history data sets
+>   1. Assign certain functions to diffrent modules
+>   1. Restrict communication between some areas of the program
+>   1. Check data integrity for critical variables
+
+##### 3.6.4. 유지 보수성(Maintainability)
+
+>- 소프트웨어 자체를 쉽게 유지 보수할 수 있는 속성을 명시해야 한다.
+>- 모듈화, 인터페이스, 복잡성 등과 관련된 요구사항이 있을 수 있다.
+
+##### 3.6.5. 이식성(Portability)
+
+>- 소프트웨어를 다른 호스트 시스템 또는 운영체제로 쉽게 이식할 수 있는 속성을 명시해야 한다.
+>- 포함될 수 있는 속성의 종류
+>   1. Percentage of components with host-dependent code
+>   1. Percentage of code that is dependent
+>   1. Use of a proven portable language
+>   1. Use of a particular compiler or language subset
+>   1. Use of a particular operation system
 
 #### 3.7. 상세 요구사항의 구성(Organizing the specific requirements)
 
